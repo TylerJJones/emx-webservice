@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
     } else if(id=='Name') { 
       res.send('Tyler Jones'); 
     } else if(id=='EmailAddress') { 
-      res.send('tylerjjones09@gmail.com); 
+      res.send('tylerjjones09@gmail.com'); 
     } else if(id=='Phone') { 
       res.send('573-680-5560'); 
     } else { 
