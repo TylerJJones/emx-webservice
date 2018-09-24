@@ -4,11 +4,8 @@ const app = express();
 // Request Mapping
 // ====================================
 
-// Ping Request
 app.get('/', (req, res) => {
-  // res.send('OK');
-  var q = request.query.q;
-  response.end("I have received the Q: " + q);
+  console.log(req.query)
 });
 
 // Listen to the App Engine-specified port, or 8080 otherwise
