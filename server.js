@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Hello, EMX Digital! Welcome to my web app ran through Google Cloud Platform.');
+  res.send('OK');
 });
 
 // Listen to the App Engine-specified port, or 8080 otherwise
