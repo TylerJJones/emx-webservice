@@ -7,15 +7,15 @@ const app = express();
 app.get('/', (req, res) => {
   for (const key in req.query) {
     
+    // Loop through the request and grab the variable 'q'
     var id = req.query.q;
     
-    if(id=='Ping') {
-      res.send('OK');
-    } else if(id=='Name') {
-      res.send('Tyler Jones');
-    } else {
-      res.send('OK');
-    }
+    // Conditional logic to send out the proper response based on ID
+    if(id=='Ping') { res.send('OK') } 
+    else if(id=='Name') { res.send('Tyler Jones'); } 
+    else if(id=='EmailAddress') { res.send('tylerjjones09@gmail.com); }
+    else if(id=='Phone') { res.send('573-680-5560'); } 
+    else { res.send('OK'); }
 
   }
 });
