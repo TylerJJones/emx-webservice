@@ -15,10 +15,12 @@ app.get('/', (req, res) => {
       res.send('OK') 
     } else if(id=='Name') { 
       res.send('Tyler Jones'); 
-    } else if(id=='EmailAddress') { 
+    } else if(id=='Email Address') { 
       res.send('tylerjjones09@gmail.com'); 
     } else if(id=='Phone') { 
-      res.send('573-680-5560'); 
+      res.send('573-680-5560');
+    } else if(id=='') {
+      res.send(''); 
     } else { 
       res.send('OK'); 
     }
