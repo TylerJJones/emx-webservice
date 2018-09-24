@@ -6,13 +6,15 @@ const app = express();
 // ====================================
 
 // Ping Request
-app.get('/?q=Ping', (req, res) => {
+app.get('/', (req, res) => {
   res.send('OK');
+  next();
 });
 
 // Can you provide proof of eligibility to work in the US?
-app.get('/?q=Status', (req, res) => {
+app.get('/?q=Status&d=Can+you+provide+proof+of+eligibility+to+work+in+the+US%3F', (req, res) => {
   res.send('Yes');
+  next();
 });
 
 // Please provide a URL where we can download the source code of your resume and submssion of web service.
