@@ -5,7 +5,19 @@ const app = express();
 // ====================================
 
 app.get('/', (req, res) => {
-  console.log(req.query)
+  for (const key in req.query) {
+    
+    var id = req.query.q;
+    
+    if(id=='Ping') {
+      res.send('OK');
+    } else if(id=='Name') {
+      res.send('Tyler Jones');
+    } else {
+      res.send('OK');
+    }
+
+  }
 });
 
 // Listen to the App Engine-specified port, or 8080 otherwise
