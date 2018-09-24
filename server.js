@@ -5,11 +5,6 @@ const app = express();
 // Request Mapping
 // ====================================
 
-// Default
-app.get('/', (req, res) => {
-  res.send('OK');
-});
-
 // Ping Request
 app.get('/?q=Ping', (req, res) => {
   res.send('OK');
