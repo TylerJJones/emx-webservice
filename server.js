@@ -11,11 +11,17 @@ app.get('/', (req, res) => {
     var id = req.query.q;
     
     // Conditional logic to send out the proper response based on ID
-    if(id=='Ping') { res.send('OK') } 
-    else if(id=='Name') { res.send('Tyler Jones'); } 
-    else if(id=='EmailAddress') { res.send('tylerjjones09@gmail.com); }
-    else if(id=='Phone') { res.send('573-680-5560'); } 
-    else { res.send('OK'); }
+    if(id=='Ping') { 
+      res.send('OK') 
+    } else if(id=='Name') { 
+      res.send('Tyler Jones'); 
+    } else if(id=='EmailAddress') { 
+      res.send('tylerjjones09@gmail.com); 
+    } else if(id=='Phone') { 
+      res.send('573-680-5560'); 
+    } else { 
+      res.send('OK'); 
+    }
 
   }
 });
