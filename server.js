@@ -34,7 +34,7 @@ app.get('/', (req, res) => {
     } else if(id=='Status') {
       res.send('Yes');
     } else if(id=='Puzzle') {
-      res.send('ABCD/\nA=><>/\nB<=<>/\nC>>=</\nD<<<=');
+      res.send(' ABCD\nA=<><\nB>=>>\nC<<=<\nD><>=');
     } else { 
       res.send('OK'); 
     }
