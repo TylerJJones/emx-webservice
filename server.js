@@ -19,8 +19,22 @@ app.get('/', (req, res) => {
       res.send('tylerjjones09@gmail.com'); 
     } else if(id=='Phone') { 
       res.send('573-680-5560');
-    } else if(id=='') {
-      res.send(''); 
+    } else if(id=='Position') {
+      res.send('Lead or Senior Software Engineer');
+    } else if(id=='Years') {
+      res.send('6+ years of software development, 11+ in web development.');
+    } else if(id=='Referrer') {
+      res.send('indeed.com');
+    } else if(id=='Degree') {
+      res.send('Associates of Design and Technology from IADT Chicago');
+    } else if(id=='Resume') {
+      res.send('https://github.com/TylerJJones/emx-webservice.git');
+    } else if(id=='Source') {
+      res.send('https://github.com/TylerJJones/emx-webservice.git');
+    } else if(id=='Status') {
+      res.send('Yes');
+    } else if(id=='Puzzle') {
+      res.send('ABCD/\nA=><>/\nB<=<>/\nC>>=</\nD<<<=');
     } else { 
       res.send('OK'); 
     }
