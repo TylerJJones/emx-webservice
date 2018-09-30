@@ -41,7 +41,7 @@ app.get('/', (req, res) => {
       // Decoder Ring Activated!
       puzzelCode = decodeURIComponent(puzzelCode).substring(25);
       var aResult = puzzelCode.substring(7, puzzelCode.length-19);
-      var bResult = puzzelCode.substring(12, puzzelCode.length-14);
+      var bResult = puzzelCode.substring(12, puzzelCode.length-13);
       var cResult = puzzelCode.substring(17, puzzelCode.length-9);
       var dResult = puzzelCode.substring(22, puzzelCode.length-4);
 
