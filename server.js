@@ -34,7 +34,16 @@ app.get('/', (req, res) => {
     } else if(id=='Status') {
       res.send('Yes');
     } else if(id=='Puzzle') {
-      res.send(' ABCD\nA=<><\nB>=>>\nC<<=<\nD><>=');
+
+      // Grab Puzzel Partial To Be Decoded
+      var puzzelCode = req.query.d;
+    
+      // Decoder Ring Activated!
+      puzzelCode = decodeURIComponent(puzzelCode);
+
+      // Send Answer  
+      res.send(puzzelCode);
+
     } else { 
       res.send('OK'); 
     }
