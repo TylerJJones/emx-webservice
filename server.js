@@ -45,10 +45,29 @@ app.get('/', (req, res) => {
       var cResult = puzzelCode.substring(19, puzzelCode.length-7);
       var dResult = puzzelCode.substring(25, puzzelCode.length-1);
 
+        // A Result Conditional
+        if(aResult == 'A=---') {
+        
+          aResult == '"A" is the ID Result';
+        
+        } else if(bResult == 'B-=--') {
+        
+          bResult == '"B" is the ID Result';
+        
+        } else if(cResult == 'C--=-') {
+        
+          cResult == '"C" is the ID Result';
+        
+        } else if(dResult == 'D---=') {
+
+          dResult == '"D" is the ID Result';
+
+        }
+
       var fullResult = aResult + "<br>" + bResult + "<br>" + cResult + "<br>" + dResult; 
 
       // Send Answer  
-      res.send(puzzelCode + "<br>" + aResult + "<br>" + bResult + "<br>" + cResult + "<br>" + dResult);
+      res.send(puzzelCode + "\n" + aResult + "\n" + bResult + "\n" + cResult + "\n" + dResult);
 
     } else { 
       res.send('OK'); 
