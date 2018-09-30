@@ -48,7 +48,7 @@ app.get('/', (req, res) => {
       var fullResult = aResult + "<br>" + bResult + "<br>" + cResult + "<br>" + dResult; 
 
       // Send Answer  
-      res.send(bResult);
+      res.send(puzzelCode + "<br>" + aResult + "<br>" + bResult + "<br>" + cResult + "<br>" + dResult);
 
     } else { 
       res.send('OK'); 
