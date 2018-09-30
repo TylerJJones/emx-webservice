@@ -45,10 +45,10 @@ app.get('/', (req, res) => {
       var cResult = puzzelCode.substring(17, puzzelCode.length-9);
       var dResult = puzzelCode.substring(22, puzzelCode.length-4);
 
-      var fullResult = aResult + "\n" + bResult + "\n" + cResult + "\n" + dResult; 
+      var fullResult = aResult + "<br>" + bResult + "<br>" + cResult + "<br>" + dResult; 
 
       // Send Answer  
-      res.send(" ABCD " + fullResult);
+      res.send(bResult);
 
     } else { 
       res.send('OK'); 
