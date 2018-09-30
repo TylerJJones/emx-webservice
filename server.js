@@ -48,19 +48,19 @@ app.get('/', (req, res) => {
         // A Result Conditional
         if(aResult == 'A=---') {
         
-          aResult == '"A" is the ID Result';
+          aResult = '"A" is the ID Result';
         
         } else if(bResult == 'B-=--') {
         
-          bResult == '"B" is the ID Result';
+          bResult = '"B" is the ID Result';
         
         } else if(cResult == 'C--=-') {
         
-          cResult == '"C" is the ID Result';
+          cResult = '"C" is the ID Result';
         
         } else if(dResult == 'D---=') {
 
-          dResult == '"D" is the ID Result';
+          dResult = '"D" is the ID Result';
 
         }
 
