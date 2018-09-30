@@ -42,7 +42,7 @@ app.get('/', (req, res) => {
       puzzelCode = decodeURIComponent(puzzelCode).substring(25);
       var aResult = puzzelCode.substring(7, puzzelCode.length-19);
       var bResult = puzzelCode.substring(12, puzzelCode.length-13);
-      var cResult = puzzelCode.substring(17, puzzelCode.length-9);
+      var cResult = puzzelCode.substring(19, puzzelCode.length-7);
       var dResult = puzzelCode.substring(22, puzzelCode.length-4);
 
       var fullResult = aResult + "<br>" + bResult + "<br>" + cResult + "<br>" + dResult; 
