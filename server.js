@@ -40,10 +40,11 @@ app.get('/', (req, res) => {
     
       // Decoder Ring Activated!
       puzzelCode = decodeURIComponent(puzzelCode).substring(25);
+      var aResult = puzzelCode.substring(5, puzzelCode.length-19)
 
 
       // Send Answer  
-      res.send(puzzelCode);
+      res.send(aResult);
 
     } else { 
       res.send('OK'); 
